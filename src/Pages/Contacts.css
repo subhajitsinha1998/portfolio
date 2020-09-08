@@ -1,0 +1,18 @@
+label {
+  color: rgb(0,0,75) !important;
+}
+
+label.Mui-focused {
+  color: #004cff !important;
+}
+
+fieldset{
+  border-width: 2px !important;
+  border-color: rgb(0,0,75) !important;
+  z-index: -1;
+}
+
+.Mui-focused fieldset{
+  border-color: #004cff !important;
+  background-color: rgba(112, 112, 112, 0.5) !important;
+}

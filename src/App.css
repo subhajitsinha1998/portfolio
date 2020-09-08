@@ -1,0 +1,19 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background: fixed;
+  background-image: linear-gradient(rgba(58, 58, 58, 0.5), rgba(58, 58, 58, 0.5)), url(https://collegeinfogeek.com/wp-content/uploads/2018/04/50-personal-website-examples-featured-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+}
+
+.App{
+  height: 100vh;
+}

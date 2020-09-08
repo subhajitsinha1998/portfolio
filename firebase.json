@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "subhajitsinha",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

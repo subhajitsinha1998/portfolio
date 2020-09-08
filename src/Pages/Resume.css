@@ -1,0 +1,118 @@
+.heading{
+  color: rgb(0,0,75);
+  padding: 5rem 0 3rem 0;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.timeline{
+  position: relative;
+  padding: 1rem;
+  margin: 0px auto;
+  cursor: default;
+}
+
+.timeline::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  border: 1px solid rgb(62, 82, 255);
+  right: 40px;
+  top: 0px;
+}
+
+.timeline::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timelineYear{
+  text-align: center;
+  background: rgb(0,0,75);
+  color: white;
+  font-size: 1.5rem !important;
+  line-height: 1;
+  max-width: 9.5rem;
+  margin: 0px 3rem 0px auto !important;
+  padding: 0.5rem 0 1rem !important;
+}
+
+.timelineYear::before{
+  display: none;
+}
+
+.timelineItem{
+  position: relative;
+  border-bottom: 2px solid rgb(62, 82, 255);
+  padding: 1rem;
+  margin: 1rem 3rem 1rem 1rem;
+  clear: both;
+}
+
+.timelineItem::after{
+  content: "";
+  position: absolute;
+}
+
+.timelineItem::before{
+  content: "";
+  position: absolute;
+  right: -0.625rem;
+  top: calc(50% - 5px);
+  border-style: solid;
+  border-color: rgb(0,0,75) rgb(0,0,75) transparent transparent;
+  border-width: 0.625rem;
+  transform: rotate(45deg);
+}
+
+.worktitle{
+  color: white;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+
+
+@media only screen and (min-device-width: 1000px){
+  
+  .timeline{
+    padding: 2rem;
+  }
+  
+  .timeline::before{
+    left: calc(50% - 1px);
+    right: auto;
+  }
+  
+  .timelineYear{
+    text-align: center;
+    margin: 0px auto !important;
+  }
+
+  .timelineYear:nth-of-type(2n){
+    float: none !important;
+    margin: 0px auto !important;
+  }
+
+  .timelineYear:nth-of-type(2n)::before{
+    display: none;
+  }
+  
+  .timelineItem{
+    width: 44%;
+    margin: 1rem;
+  }
+
+  .timelineItem:nth-of-type(2n){
+    float: right;
+    margin: 0.5rem;
+    border-color: rgb(62, 82, 255);
+  }
+
+  .timelineItem:nth-of-type(2n)::before{
+    right: auto;
+    left: -0.625rem;
+    border-color: transparent transparent rgb(0,0,75) rgb(0,0,75);
+  }
+}
